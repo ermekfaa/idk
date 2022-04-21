@@ -1,0 +1,42 @@
+int main()
+{
+
+
+    char x;
+    int a,b;
+    int i,j;
+
+
+    printf("----Square maker----\n\n");
+
+    printf("Enter the Pattern: ");
+    scanf(" %c",&x);
+
+    printf("How many collums?: ");
+    scanf("%d",&a);
+
+    printf("How many rows?: ");
+    scanf("%d",&b);
+
+
+    for (i=1; i<=a; i++)
+    {
+       for (j=1; j<=b; j++)
+       {
+           if(j == 1 || j == b || i == 1 || i == a)
+           {
+               printf("%c",x);
+           }
+           else
+           {
+               printf(" ");
+           }
+
+
+       }
+       printf("\n");
+
+    }
+
+    return 0;
+}
